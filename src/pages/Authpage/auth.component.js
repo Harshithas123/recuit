@@ -8,6 +8,7 @@ import { createUserWithEmailAndPassword} from 'firebase/auth';
 import { firebaseAuth } from '../../backend/firebasehandler';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../Authpage/auth.style.css';
 
 
 function Authpage() {
@@ -19,10 +20,12 @@ function Authpage() {
     try{
       await createUserWithEmailAndPassword(firebaseAuth, userInput.emailId ,userInput.password);
       alert("acount created")
+     
       
     }catch(err){
       alert(err);
       nav("/jobdetail")
+      
     }
   }
 

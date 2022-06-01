@@ -1,8 +1,14 @@
 .data {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
+
+.inputs {
+  padding: 300px;
+  width: 300px;
 }
